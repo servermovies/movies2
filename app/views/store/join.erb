@@ -1,0 +1,49 @@
+
+<% if notice %>
+    <p id = "notice"><%=  notice %></p>
+<% end %>
+<h1>3D or Not 3D.com</h1>
+
+<div id="main">
+
+
+
+<div class ="entry">
+
+
+
+<div class="field">
+
+  <br />
+  <%= label_tag :username %>
+  <%= text_field_tag :username %>
+  <%= label_tag :email %>
+  <%= text_field_tag :email %>
+
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+  <br />
+  <%= label_tag :House_Number %>
+  <%= text_field_tag :address %>
+  <br />
+  <%= label_tag :Street_Name %>
+  <%= text_field_tag :address %>
+  <br />
+  <%= label_tag :Town %>
+  <%= text_field_tag :address %>
+  <br />
+  <%= label_tag :City %>
+  <%= text_field_tag :address %>
+  <br />
+  <%= label_tag :Post_Code %>
+  <%= text_field_tag :address %>
+  <br />
+  <%= label_tag :Country %>
+  <%= text_field_tag :address %>
+  <br />
+  <%=  button_to "submit" %>
+
+
+</div>
+</div>
+</div>

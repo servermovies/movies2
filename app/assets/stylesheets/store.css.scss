@@ -1,0 +1,35 @@
+// Place all the styles related to the store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.entry {
+        margin:3px;
+        clear:right;
+        display:inline-block;
+        position:relative;
+        width:150px;
+        height:110px;
+        padding-left:5px;
+        padding-bottom:20px;}
+
+
+
+#main {position:absolute;
+  width:800px;
+  height:550px;
+  border:2px solid gray;
+  background: #f5f5dc;}
+
+
+
+body {background:#ffffff;
+      width:900px;
+}
+p, div.price_line {
+  margin-left: 100px;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+  form, div {display: inline;}}
+
