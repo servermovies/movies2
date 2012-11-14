@@ -8,6 +8,8 @@ class CreateProducts < ActiveRecord::Migration
       t.string :stock_status
       t.decimal :price, :precision => 8, :scale => 2
       t.string :image_url
+      t.string :wanted
+      t.decimal :buy_price , :precision => 8, :scale => 2
 
       t.timestamps
     end

@@ -11,6 +11,8 @@
     <th>Rating</th>
     <th>Status</th>
     <th>Price</th>
+    <th>Wanted</th>
+    <th>Buy_price</th>
     <th>Image URL</th>
   </tr>
 
@@ -29,6 +31,8 @@
     <td><%= product.stock_status %></td>
     <td><%= product.price %></td>
     <td><%= product.image_url %></td>
+    <td><%= product.wanted %></td>
+    <td><%= product.buy_price %></td>
     <td><%= link_to 'Show', product %></td>
     <td><%= link_to 'Edit', edit_product_path(product) %></td>
     <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>

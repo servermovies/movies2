@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
-    @product = products(:one)
+    @product = product(:one)
     @update = {
         :title           => 'lorem ipsum',
         :description     => 'wibbles are fun',
@@ -11,6 +11,8 @@ class ProductsControllerTest < ActionController::TestCase
         :genre           => 'comedy',
         :stock_status    => 'new',
         :rating          => '5.0',
+        :wanted          =>  'yes',
+        :buy_price       =>  7.00,
     }
   end
 
@@ -44,7 +46,7 @@ class ProductsControllerTest < ActionController::TestCase
   end
 
   test "should update product" do
-    put :update, id: @product.to_param, :product => @update
+    put :update, id: @product, product: @update
     assert_redirected_to product_path(assigns(:product))
   end
 

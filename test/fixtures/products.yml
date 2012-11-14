@@ -8,6 +8,8 @@ one:
   stock_status: MyString
   price: 9.99
   image_url: MyString
+  wanted: MyString
+  buy_price: 7.00
 
 two:
   title: MyString
@@ -17,3 +19,5 @@ two:
   stock_status: MyString
   price: 9.99
   image_url: MyString
+  wanted: MyString
+  buy_price: 7.00

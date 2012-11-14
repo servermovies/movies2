@@ -1,6 +1,7 @@
 class StoreController < ApplicationController
   def index
-     @products = Product.where(stock_status: 'new' )
+     @products = Product.where(stock_status:'new' )
+
 
   end
 
@@ -9,7 +10,7 @@ class StoreController < ApplicationController
   end
 
   def most_wanted
-
+    @products = Product.where(wanted: 'yes')
   end
 
   def join

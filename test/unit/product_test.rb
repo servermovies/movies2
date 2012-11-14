@@ -1,9 +1,7 @@
 require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
   product = Product.new
   assert product.invalid?
   assert product.errors[:title].any?
@@ -13,6 +11,8 @@ class ProductTest < ActiveSupport::TestCase
   assert product.errors[:rating].any?
   assert product.errors[:stock_status].any?
   assert product.errors[:genre].any?
+  assert product.errors[:wanted].any?
+  assert product.errors[:buy_price].any?
 
   test "product price must be positive" do
       product = Product.new(:title        => "my book title",
@@ -32,6 +32,19 @@ class ProductTest < ActiveSupport::TestCase
 
     product.price = 1
     assert product.valid?
+
+      product.buy_price = -1
+      assert product.invalid?
+      assert_equal "must be greater than or equal to 0.01",
+                   product.errors[:price].join('; ')
+
+      product.buy_price = 0
+      assert product.invalid?
+      assert_equal "must be greater than or equal to 0.01",
+                   product.errors[:price].join('; ')
+
+      product.buy_price = 1
+      assert product.valid?
   end
 
   def new_product(image_url)
@@ -53,5 +66,9 @@ class ProductTest < ActiveSupport::TestCase
     bad.each do |name|
         assert new_product(name).invalid?, "#{name} shouldn't be valid}"
     end
-  end
+
+
+    end
 end
+
+

@@ -12,16 +12,22 @@
 
 
 
-<div class="field">
+<div class="fielda">
+  <fieldset>
+  User Details:
+  <br/><br />
 
-  <br />
   <%= label_tag :username %>
   <%= text_field_tag :username %>
   <%= label_tag :email %>
   <%= text_field_tag :email %>
-
   <%= label_tag :password %>
   <%= password_field_tag :password %>
+  </fieldset>
+</div>
+
+  <br />
+  <div class ="field">
   <br />
   <%= label_tag :House_Number %>
   <%= text_field_tag :address %>
@@ -42,7 +48,6 @@
   <%= text_field_tag :address %>
   <br />
   <%=  button_to "submit" %>
-
 
 </div>
 </div>

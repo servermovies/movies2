@@ -31,6 +31,8 @@ Product.create(:title =>'Anna Karenina',
                :rating => '4.9',
                :stock_status =>'new',
                :price => 17.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'anna karenina.jpg')
 
 
@@ -40,8 +42,10 @@ Product.create(:title =>'Argo',
                    %{<p>An action blockbuster thriller, with an all star cast.</p>},
                :genre =>'Thriller',
                :rating => '3.2',
-               :stock_status =>'new',
+               :stock_status => 'new',
                :price => 16.99,
+               :wanted => 'yes',
+               :buy_price => 8.00,
                :image_url =>'argo.jpg')
 
 
@@ -54,6 +58,8 @@ Product.create(:title =>'Avengers Assemble',
                :rating => '4.1',
                :stock_status =>'new',
                :price => 19.99,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url =>'avengers.jpg')
 
 
@@ -64,6 +70,8 @@ Product.create(:title =>'The Dark Knight',
                :rating => '4.9',
                :stock_status =>'new',
                :price => 18.99,
+               :wanted => 'yes',
+               :buy_price => 8.00,
                :image_url =>'dark knight.jpg')
 
 Product.create(:title =>'The Bourne Legacy',
@@ -73,6 +81,8 @@ Product.create(:title =>'The Bourne Legacy',
                :rating => '5.2',
                :stock_status =>'new',
                :price => 17.99,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url =>'bourne.jpg')
 
 
@@ -83,6 +93,8 @@ Product.create(:title =>'Brave',
                :rating => '4.3',
                :stock_status =>'new',
                :price => 16.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'brave.jpg')
 
 
@@ -95,6 +107,8 @@ Product.create(:title =>'Diary of a wimpy kid',
                :rating => '3.1',
                :stock_status =>'new',
                :price => 19.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'diary wimpy kid dog days.jpg')
 
 
@@ -107,6 +121,8 @@ Product.create(:title =>'Flight',
                :rating => '4.5',
                :stock_status =>'new',
                :price => 18.99,
+               :wanted => 'yes',
+               :buy_price => 8.00,
                :image_url =>'flight.jpg')
 
 
@@ -120,6 +136,8 @@ Product.create(:title =>'Fun Size',
                :rating => '2.3',
                :stock_status =>'new',
                :price => 17.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'fun size.jpg')
 
 
@@ -132,6 +150,8 @@ Product.create(:title =>'Here come the boom',
                :rating => '3.6',
                :stock_status =>'new',
                :price => 19.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'here comes the boom.jpg')
 
 
@@ -144,6 +164,8 @@ Product.create(:title => 'Hope Springs',
                :rating => '3.8',
                :stock_status =>'new',
                :price => 16.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'hope springs.jpg')
 
 
@@ -156,6 +178,8 @@ Product.create(:title =>'Hotel Transylvania',
                :rating => '4.1',
                :stock_status =>'new',
                :price => 15.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'hotel transylvania.jpg')
 
 
@@ -168,6 +192,8 @@ Product.create(:title =>'Ice Age 3',
                :rating => '4.8',
                :stock_status =>'new',
                :price => 18.99,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url =>'ice age.jpg')
 
 
@@ -180,6 +206,8 @@ Product.create(:title =>'Judge Dredd',
                :rating => '3.3',
                :stock_status =>'new',
                :price => 17.99,
+               :wanted => 'yes',
+               :buy_price => 8.00,
                :image_url =>'judge dredd.jpg')
 
 
@@ -192,6 +220,8 @@ Product.create(:title =>'Lawless',
                :rating => '4.2',
                :stock_status =>'new',
                :price => 18.99,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url =>'lawless.jpg')
 
 
@@ -204,6 +234,8 @@ Product.create(:title =>'Lincoln',
                :rating => '2.9',
                :stock_status =>'new',
                :price => 18.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'lincoln.jpg')
 
 
@@ -216,6 +248,8 @@ Product.create(:title =>'Looper',
                :rating => '4.4',
                :stock_status =>'new',
                :price => 16.99,
+               :wanted => 'yes',
+               :buy_price => 8.00,
                :image_url =>'looper.jpg')
 
 
@@ -228,6 +262,8 @@ Product.create(:title =>'Madagascar 3',
                :rating => '3.5',
                :stock_status =>'new',
                :price => 19.99,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url =>'madagascar 3.jpg')
 
 
@@ -240,6 +276,8 @@ Product.create(:title =>'Men in Black 3',
                :rating => '3.4',
                :stock_status =>'new',
                :price => 17.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'men inblack 3.jpg')
 
 
@@ -252,6 +290,8 @@ Product.create(:title =>'Paranormal Activity',
                :rating => '1.7',
                :stock_status =>'new',
                :price => 17.99,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'paranormal activity 4.jpg')
 
 
@@ -264,6 +304,8 @@ Product.create(:title =>'Promethues',
                :rating => '5.0',
                :stock_status =>'used',
                :price => 19.99,
+               :wanted => 'yes',
+               :buy_price => 6.00,
                :image_url =>'prometheus.jpg')
 
 
@@ -277,6 +319,8 @@ Etiam venenatis pellentesque volutpat. Maecenas rhoncus est lacus.Red lights</p>
                :rating => '3.0',
                :stock_status =>'used',
                :price => 10.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'red lights.jpg')
 
 
@@ -289,6 +333,8 @@ Product.create(:title =>'Rise of The Guardians',
                :rating => '2.5',
                :stock_status =>'used',
                :price => 11.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'rise of guardians.jpg')
 
 
@@ -301,6 +347,8 @@ Product.create(:title =>'Rock of Ages',
                :rating => '1.9',
                :stock_status =>'used',
                :price => 10.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'Rock of ages.jpg')
 
 
@@ -313,6 +361,8 @@ Product.create(:title =>'Silent Hill',
                :rating => '1.7',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url => 'silent hill.jpg')
 
 
@@ -325,6 +375,8 @@ Product.create(:title =>'Sinister',
                :rating => '3.3',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'sinister.jpg')
 
 
@@ -337,18 +389,22 @@ Product.create(:title =>'Skyfall',
                :rating => '5.9',
                :stock_status =>'used',
                :price => 13.00,
+               :wanted => 'yes',
+               :buy_price => 6.00,
                :image_url =>'skyfall.jpg')
 
 
 
 
-Product.create(:title =>'The Amazing Spiderman',
+Product.create(:title =>'Spiderman',
                :description =>
                    %{<p>Remake of the spiderman movies Peter parker becomes spiderman</p>},
                :genre =>'Sci-fi',
                :rating => '4.1',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'yes',
+               :buy_price => 6.00,
                :image_url =>'spiderman.jpg')
 
 
@@ -361,6 +417,8 @@ Product.create(:title =>'Taken 2',
                :rating => '4.2',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'yes',
+               :buy_price => 6.00,
                :image_url =>'Taken 2.jpg')
 
 
@@ -373,6 +431,8 @@ Product.create(:title =>'Ted',
                :rating => '4.0',
                :stock_status =>'used',
                :price => 13.00,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url =>'Ted.jpg')
 
 
@@ -385,6 +445,8 @@ Product.create(:title =>'The Campaign',
                :rating => '2.7',
                :stock_status =>'used',
                :price => 10.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'The campaign.jpg')
 
 
@@ -397,6 +459,8 @@ Product.create(:title =>'The Expendables 2',
                :rating => '3.9',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'The expendables 2.jpg')
 
 
@@ -411,6 +475,8 @@ Etiam venenatis pellentesque volutpat. Maecenas rhoncus est lacus hunger.</p>},
                :rating => '5.1',
                :stock_status =>'used',
                :price => 11.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'the hunger games.jpg')
 
 
@@ -423,6 +489,8 @@ Product.create(:title =>'The Lorax',
                :rating => '5.2',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'yes',
+               :buy_price => 6.00,
                :image_url =>'The lorax.jpg')
 
 
@@ -435,6 +503,8 @@ Product.create(:title =>'The Three Stooges',
                :rating => '5.3',
                :stock_status =>'used',
                :price => 11.00,
+               :wanted => 'no' ,
+               :buy_price => 7.00 ,
                :image_url =>'The three stooges.jpg')
 
 
@@ -447,6 +517,8 @@ Product.create(:title =>'The Watch',
                :rating => '5.4',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url => 'the watch.jpg')
 
 
@@ -460,6 +532,8 @@ Product.create(:title =>'Total Recall',
                :rating => '5.5',
                :stock_status =>'used',
                :price => 11.00,
+               :wanted => 'yes',
+               :buy_price => 6.00,
                :image_url =>'Total recall.jpg')
 
 
@@ -472,6 +546,8 @@ Product.create(:title =>'Twilight',
                :rating => '5.6',
                :stock_status =>'used',
                :price => 12.00,
+               :wanted => 'yes',
+               :buy_price => 7.00,
                :image_url =>'twilight.jpg')
 
 
@@ -484,6 +560,8 @@ Product.create(:title =>'What Richard Did',
                :rating => '5.8',
                :stock_status =>'used',
                :price => 13.00,
+               :wanted => 'yes',
+               :buy_price => 8.00,
                :image_url =>'what richard did.jpg')
 
 

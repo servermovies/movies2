@@ -1,9 +1,12 @@
 <% if notice %>
 <p id = "notice"><%=  notice %></p>
 <% end %>
-<h1>3D or Not 3D.com</h1>
+
 
  <div id="main">
+   <div id="banner">
+     <%= image_tag("3D-logo.jpg") %><h1>3D or Not 3D.com</h1>
+   </div>
 
 
 <% @products.each do |product| %>
@@ -11,10 +14,12 @@
     <b><%= product.title %></b><br />
     <%= image_tag(product.image_url) %> <br />
     Rating:<%= product.rating %>
-    <%=number_to_currency (product.price) %><%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+
+       <%=number_to_currency (product.price) %>
+     <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
+       </div>
 
 
   </div>
-</div>
 
 <% end %>

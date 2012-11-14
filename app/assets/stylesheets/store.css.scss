@@ -4,20 +4,23 @@
 
 
 
+
 .entry {
+
         margin:3px;
         clear:right;
         display:inline-block;
         position:relative;
         width:150px;
         height:110px;
+
         padding-left:5px;
         padding-bottom:20px;}
 
 
 
 #main {position:absolute;
-  width:800px;
+  width:801px;
   height:550px;
   border:2px solid gray;
   background: #f5f5dc;}
@@ -32,4 +35,16 @@ p, div.price_line {
   margin-top: 0.5em;
   margin-bottom: 0.8em;
   form, div {display: inline;}}
+
+.fielda {
+  padding-top:20px;
+  width:750px;
+  position:absolute;
+  display:list-item;
+
+}
+
+.field {
+  padding-top:80px;
+}
 
