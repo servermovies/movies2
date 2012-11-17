@@ -1,7 +1,7 @@
 <% if notice %>
     <p id = "notice"><%=  notice %></p>
 <% end %>
-<h1>3D or Not 3D.com</h1>
+
 
 <div id="main">
 
@@ -13,8 +13,18 @@
         Rating:<%= product.rating %>
         <%=number_to_currency (product.price) %><%= button_to 'Add to Cart', line_items_path(product_id: product) %>
 
-
       </div>
-      </div>
-
   <% end %>
+
+
+</div>
+
+<div id="columns">
+  <div id="side">
+    <div id="cart">
+      <%= render @cart %>
+    </div>
+
+  </div>
+</div>
+

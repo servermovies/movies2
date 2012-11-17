@@ -1,18 +1,19 @@
 Movies::Application.routes.draw do
 
 
-
+  resources :carts
 
   resources :line_items
 
-  resources :carts
+  resources :products
 
   get "store/index"
   get "store/used"
   get "store/most_wanted"
   get "store/join"
 
-  resources :products
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
