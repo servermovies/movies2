@@ -3,7 +3,7 @@ class StoreController < ApplicationController
      @products = Product.where(stock_status:'new' )
      @cart = current_cart
 
-  end
+end
 
   def used
     @products = Product.where(stock_status: 'used')

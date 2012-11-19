@@ -6,7 +6,7 @@
 <h2>3D or Not 3D</h2>
 <div class="cart_title"></div>
     <table>
-      <%= render @cart %>
+      <%= render @cart.line_items %>
 
 
 
@@ -20,15 +20,9 @@
 
 
 
-
-
-<ul>
-  <% @cart.credit_items.each do | credit | %>
-      <li><%= credit.quantity %> &times; <%= credit.product.title %></li>
-  <% end %>
-</ul>
-
 <table>
+
+  <%=  render @cart.credit_items %>
 
 <tr class="Credit Available">
   <td colspan="2">Total Credit</td>
@@ -36,4 +30,4 @@
 </tr>
 </table>
 
-<%= button_to 'Apply credit', @cart, method: :post, confirm: 'Are you sure ?' %>
+<%= button_to 'Apply credit', @cart, method: :get, confirm: 'Are you sure ?' %>
