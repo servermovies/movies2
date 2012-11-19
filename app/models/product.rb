@@ -2,6 +2,8 @@
 class Product < ActiveRecord::Base
    has_many :line_items
    before_destroy :ensure_not_referenced_by_any_line_item
+   has_many :credit_items
+   before_destroy :ensure_not_referenced_by_any_credit_item
   #...
    private
    # ensure that there are no line items referencing this product
@@ -12,7 +14,16 @@ class Product < ActiveRecord::Base
              errors.add(:base, 'Line Items present')
              return false
              end
+   end
+
+   def ensure_not_referenced_by_any_credit_item
+     if credit_items.empty?
+       return true
+     else
+       errors.add(:base, 'Credit Items present')
+       return false
      end
+   end
 
 
   attr_accessible :description, :genre, :image_url, :price, :rating, :stock_status, :wanted, :title, :buy_price

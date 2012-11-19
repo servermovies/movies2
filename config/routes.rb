@@ -1,6 +1,9 @@
 Movies::Application.routes.draw do
 
 
+  resources :credit_items
+
+
   resources :carts
 
   resources :line_items
@@ -10,6 +13,7 @@ Movies::Application.routes.draw do
   get "store/index"
   get "store/used"
   get "store/most_wanted"
+
   get "store/join"
 
 

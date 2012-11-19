@@ -8,7 +8,7 @@
       <div class ="entry">
         <b><%= product.title %></b><br />
         <%= image_tag(product.image_url) %> <br />
-        <%=number_to_currency (product.buy_price) %><%= button_to 'Trade for Credit', line_items_path(product_id: product) %>
+        <%=number_to_currency (product.buy_price) %><%= button_to 'Trade for Credit', credit_items_path(product_id: product) %>
 
 
       </div>
