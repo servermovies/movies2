@@ -1,6 +1,8 @@
 Movies::Application.routes.draw do
 
 
+  resources :orders
+
   resources :credit_items
 
 
